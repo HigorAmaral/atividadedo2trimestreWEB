@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #01FA5A;
+    --cor2: #0262DB;
+    --cor3: #B80AF2;
+    --cor4: #DB3202;
+    --cor5: #FFC703;
+    --cor6: black;
+    --cor7: white;
+    --font-family: 'Lora', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    padding: 10px;
+    background: var(--cor7);
+}
+
+.entrada {
+    padding: 30px;
+    text-align: center;
+    background: var(--cor1);
+}
+
+.entradah1 {
+    font-size: 60px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: var(--cor6);
+    grid-auto-columns: auto;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--cor7);
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.topnav a:hover {
+    background-color: var(--cor7);
+    color: var(--cor6);
+}
+
+.columaesquerda {
+    float: left;
+    width: 75%;
+}
+
+
+.direitacoluna {
+    float: left;
+    width: 25%;
+    background-color: var(--cor7);
+    padding-left: 20px;
+    line-height: 01.375rem;
+}
+
+.notice {
+    background-color: var(--cor7);
+    padding: 20px;
+    margin-top: 20px;
+    font-family: var(--font-family);
+    border-style: solid;
+}
+
+
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+h2,
+h1 {
+    font-family: var(--font-family);
+}
