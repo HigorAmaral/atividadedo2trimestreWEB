@@ -1,7 +1,8 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 :root {
-    --cor1: #01FA5A;
+    --cor1: darkseagreen;
     --cor2: #0262DB;
     --cor3: #B80AF2;
     --cor4: #DB3202;
@@ -22,9 +23,11 @@ body {
 }
 
 .entrada {
+    box-shadow: 5px 10px;
     padding: 30px;
     text-align: center;
     background: var(--cor1);
+    border: solid;
 }
 
 .entradah1 {
@@ -59,11 +62,9 @@ body {
 
 
 .direitacoluna {
-    float: left;
+    float: right;
     width: 25%;
-    background-color: var(--cor7);
     padding-left: 20px;
-    line-height: 01.375rem;
 }
 
 .notice {
@@ -106,4 +107,43 @@ body {
 h2,
 h1 {
     font-family: var(--font-family);
+}
+.company-details{
+    overflow: hidden;
+    padding: 3em 0em;
+    background: #E3F0F7;
+    text-align: center;
+    margin-top: 5em;
+}
+
+#footer #col1,
+#footer #col2,
+#footer #col3{
+    float: left;
+    width: 320px;
+    padding: 0px 40px 0px 40px;
+}
+#footer #icon{
+    display: block;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+.copyright
+{
+    overflow: hidden;
+    padding: 3em 0em;
+    border-top: 20px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    background: #4CAF50;
+}
+.copyright p
+{
+    letter-spacing: 1px;
+    font-size: 0.90em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.copyright a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
 }
