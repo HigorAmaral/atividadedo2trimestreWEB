@@ -72,7 +72,6 @@ body {
     padding: 20px;
     margin-top: 20px;
     font-family: var(--font-family);
-    border-style: solid;
 }
 
 
@@ -108,7 +107,8 @@ h2,
 h1 {
     font-family: var(--font-family);
 }
-.company-details{
+
+.company-details {
     overflow: hidden;
     padding: 3em 0em;
     background: #E3F0F7;
@@ -118,32 +118,57 @@ h1 {
 
 #footer #col1,
 #footer #col2,
-#footer #col3{
+#footer #col3 {
     float: left;
     width: 320px;
     padding: 0px 40px 0px 40px;
 }
-#footer #icon{
+
+#footer #icon {
     display: block;
     margin-bottom: 1em;
     font-size: 3em;
 }
-.copyright
-{
+
+/*** Adding Styles to Copyright Div ***/
+.copyright {
     overflow: hidden;
     padding: 3em 0em;
     border-top: 20px solid rgba(255, 255, 255, 0.08);
     text-align: center;
-    background: #4CAF50;
+    background: var(--cor1);
 }
-.copyright p
-{
+
+.copyright p {
     letter-spacing: 1px;
     font-size: 0.90em;
     color: rgba(255, 255, 255, 0.6);
 }
-.copyright a
-{
+
+.copyright a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
+}
+
+/* Styling Social Icons */
+ul.contact {
+    margin: 0;
+    padding: 2em 0em 0em 0em;
+    list-style: none;
+}
+
+ul.contact li {
+    display: inline-block;
+    padding: 0em 0.10em;
+    font-size: 1em;
+}
+
+ul.contact li a {
+    color: #FFF;
+    display: inline-block;
+    background: #4C93B9;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
 }
