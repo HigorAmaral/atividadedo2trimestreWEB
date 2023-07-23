@@ -130,7 +130,6 @@ h1 {
     font-size: 3em;
 }
 
-/*** Adding Styles to Copyright Div ***/
 .copyright {
     overflow: hidden;
     padding: 3em 0em;
@@ -150,7 +149,6 @@ h1 {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Styling Social Icons */
 ul.contact {
     margin: 0;
     padding: 2em 0em 0em 0em;
