@@ -38,6 +38,7 @@ body {
     overflow: hidden;
     background-color: var(--cor6);
     grid-auto-columns: auto;
+    display: flex;
 }
 
 .topnav a {
@@ -48,6 +49,8 @@ body {
     padding: 12px 14px;
     text-decoration: none;
     border-radius: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 .topnav a:hover {
@@ -122,6 +125,9 @@ h1 {
     float: left;
     width: 320px;
     padding: 0px 40px 0px 40px;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #footer #icon {
