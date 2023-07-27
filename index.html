@@ -11,6 +11,26 @@
     <title>Fritz New</title>
 </head>
 <style>
+
+    .carrosel{
+        height: 400px;
+        width: 600px;
+        animation: muda_imagem 10s infinite;
+    }
+     @keyframes muda_imagem {
+    0%{
+      background-image: url("imagens/primeira.webp");
+    }
+    33%{
+      background-image: url("imagens/sports1.jpg");
+    }
+    66%{
+      background-image: url("imagens/post1.jpg");
+    }
+    100%{
+      background-image: url("imagens/news1.webp");
+    }
+  }
     @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 </style>
 
@@ -31,7 +51,8 @@
             <div class="notice">
                 <h2>The Places Most Affected by Remote Workers, Moves Around the U.S.</h2>
                 <h5>dollar chart, 19 junh, 2023</h5>
-                <img src="imagens/primeira.webp" alt="grafico">
+                <div class="carrosel">
+            </div>
                 <p>description.</p>
                 <p>Yes, many people went to Austin, Texas. But consider the small Salisbury, Md., region, too..</p>
             </div>
@@ -59,6 +80,7 @@
             </div>
         </div>
     </div>
+    <div id="imagens"></div>
     </div>
     <footer id="footer">
         <div class="company-details">

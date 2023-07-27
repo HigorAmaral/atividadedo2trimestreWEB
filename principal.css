@@ -28,6 +28,7 @@ body {
     text-align: center;
     background: var(--cor1);
     border: solid;
+    text-shadow: black;
 }
 
 .entradah1 {
@@ -89,17 +90,24 @@ body {
 
 
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
 
-    .leftcolumn,
-    .rightcolumn {
+    .columaesquerda,
+    .direitacoluna,
+    img,
+    body,
+    .footer,
+    .notice,
+    #col1,
+    #col2,
+    #col3, .carrocel {
         width: 100%;
         padding: 0;
     }
 }
 
 
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
     .topnav a {
         float: none;
         width: 100%;
@@ -109,6 +117,7 @@ body {
 h2,
 h1 {
     font-family: var(--font-family);
+    text-shadow: black;
 }
 
 .company-details {
@@ -127,7 +136,7 @@ h1 {
     padding: 0px 40px 0px 40px;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 #footer #icon {
@@ -176,3 +185,31 @@ ul.contact li a {
     line-height: 40px;
     text-align: center;
 }
+
+
+  #imagem{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    background-image: url("imagens/fox.ico");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: muda_imagem;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes muda_imagem {
+    0%{
+      background-image: url("imagens/news1.webp");
+    }
+    33%{
+      background-image: url("imagens/sports1.jpg");
+    }
+    66%{
+      background-image: url("imagens/post1.jpg");
+    }
+    100%{
+      background-image: url("imagens/news1.webp");
+    }
+  }
+ 
