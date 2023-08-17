@@ -10,6 +10,7 @@
     --cor6: black;
     --cor7: white;
     --font-family: 'Lora', serif;
+    --cor8 :rgba(255, 255, 255, 0.6);
 }
 header {
 	height: 100px;
@@ -39,7 +40,7 @@ body {
     text-align: center;
     background: var(--cor1);
     border: solid;
-    text-shadow: black;
+    text-shadow: var(--cor6);
 }
 
 .entradah1 {
@@ -128,13 +129,13 @@ body {
 h2,
 h1 {
     font-family: var(--font-family);
-    text-shadow: black;
+    text-shadow: var(--cor6);
 }
 
 .company-details {
     overflow: hidden;
     padding: 3em 0em;
-    background: #E3F0F7;
+    background: var(--cor7);
     text-align: center;
     margin-top: 5em;
 }
@@ -159,7 +160,7 @@ h1 {
 .copyright {
     overflow: hidden;
     padding: 3em 0em;
-    border-top: 20px solid rgba(255, 255, 255, 0.08);
+    border-top: 20px solid var(--cor6);
     text-align: center;
     background: var(--cor1);
 }
@@ -167,12 +168,12 @@ h1 {
 .copyright p {
     letter-spacing: 1px;
     font-size: 0.90em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--cor8);
 }
 
 .copyright a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--cor7);
 }
 
 ul.contact {
@@ -188,9 +189,9 @@ ul.contact li {
 }
 
 ul.contact li a {
-    color: #FFF;
+    color: var(--cor7);
     display: inline-block;
-    background: #4C93B9;
+    background: var(--cor2);
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -201,8 +202,7 @@ ul.contact li a {
   #imagem{
     height: 500px;
     width: 500px;
-    border: 1px solid black;
-    background-image: url("imagens/fox.ico");
+    border: 1px solid var(--cor6);
     background-repeat: no-repeat;
     background-size: cover;
     animation-name: muda_imagem;
