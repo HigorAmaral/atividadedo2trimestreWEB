@@ -11,6 +11,17 @@
     --cor7: white;
     --font-family: 'Lora', serif;
 }
+header {
+	height: 100px;
+	flex: 1 1 100vw;
+}
+
+header #logo {
+	display: flex;
+	flex: 0 1 200px;
+	justify-content: center;
+	align-items: center;
+}
 
 * {
     box-sizing: border-box;
