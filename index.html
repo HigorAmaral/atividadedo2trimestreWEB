@@ -11,75 +11,86 @@
     <title>Fritz New</title>
 </head>
 <style>
-
-    .carrosel{
+    .carrosel {
         height: 400px;
         width: 600px;
         animation: muda_imagem 10s infinite;
     }
-     @keyframes muda_imagem {
-    0%{
-      background-image: url("imagens/primeira.webp");
+
+    @keyframes muda_imagem {
+        0% {
+            background-image: url("imagens/primeira.webp");
+        }
+
+        33% {
+            background-image: url("imagens/sports1.jpg");
+        }
+
+        66% {
+            background-image: url("imagens/post1.jpg");
+        }
+
+        100% {
+            background-image: url("imagens/news1.webp");
+        }
     }
-    33%{
-      background-image: url("imagens/sports1.jpg");
-    }
-    66%{
-      background-image: url("imagens/post1.jpg");
-    }
-    100%{
-      background-image: url("imagens/news1.webp");
-    }
-  }
+
     @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 </style>
 
 <body>
     <header>
-		<a href="./layout.html" id="logo"><img src="imagens/logo.png"></a>
-	</header>
+        <a href="./layout.html" id="logo"><img src="imagens/logo.png"></a>
+    </header>
     </div>
-
-    <div class="topnav">
-        <a href="news.html">news</a>
-        <a href="sports.html">Sports</a>
-        <a href="war.html">War</a>
-        <a style="background-color: rgb(57, 59, 61);" href="index.html">Home</a>
-    </div>
-
+    <nav>
+        <div class="topnav">
+            <a href="news.html">news</a>
+            <a href="sports.html">Sports</a>
+            <a href="war.html">War</a>
+            <a style="background-color: rgb(57, 59, 61);" href="index.html">Home</a>
+        </div>
+    </nav>
     <div class="row">
         <div class="columaesquerda">
-            <div class="notice">
-                <h2>The Places Most Affected by Remote Workers, Moves Around the U.S.</h2>
-                <h5>dollar chart, 19 junh, 2023</h5>
-                <div class="carrosel">
-            </div>
-                <p>description.</p>
-                <p>Yes, many people went to Austin, Texas. But consider the small Salisbury, Md., region, too..</p>
-            </div>
-            <div class="notice">
-                <h2>Climate and Environment<h2>
-                        <h5>Sign up for the Climate Forward newsletter, for Times subscribers., Sep 2, 2017</h5>
-                        <img src="imagens/imagen2.jpg" alt="escola">
-                        <p>Penguins in Your Fridge? These 7-Year-Olds Have Climate Solutions...</p>
-                        <p>New Jersey is the first state to require that climate change be taught at all grade levels.
-                            The focus is on problem solving, not doom and gloom..</p>
-            </div>
+            <main>
+                <div class="notice">
+                    <h2>The Places Most Affected by Remote Workers, Moves Around the U.S.</h2>
+                    <h5>dollar chart, 19 junh, 2023</h5>
+                    <div class="carrosel">
+                    </div>
+                    <p>description.</p>
+                    <p>Yes, many people went to Austin, Texas. But consider the small Salisbury, Md., region, too..</p>
+                </div>
+            </main>
+            <main>
+                <div class="notice">
+                    <h2>Climate and Environment<h2>
+                            <h5>Sign up for the Climate Forward newsletter, for Times subscribers., Sep 2, 2017</h5>
+                            <img src="imagens/imagen2.jpg" alt="escola">
+                            <p>Penguins in Your Fridge? These 7-Year-Olds Have Climate Solutions...</p>
+                            <p>New Jersey is the first state to require that climate change be taught at all grade
+                                levels.
+                                The focus is on problem solving, not doom and gloom..</p>
+                </div>
+            </main>
         </div>
-        <div class="direitacoluna">
-            <div class="notice">
-                <h3>Popular Post</h3>
-                <img src="imagens/post2.jpg" alt="post1">
-                <h3>Battle Lines Harden Over Big Oil’s Role at Climate Talks in Dubai</h3>
-                <p>The hosts of the United Nations global climate summit later this year aim to give fossil fuel
-                    companies a bigger voice, despite loud objections.</p>
-                <img src="imagens/post3.png" alt="psot3">
-                <h3>Here’s How Much Hotter Than Normal This June Has Been</h3>
-                <p>Record global warmth this month could portend a summer of extreme weather</p>
-                <img src="imagens/psot4.jpg" alt="post4">
-                <p> Why a Huge Coal Power Plant in Bangladesh Keeps Running Out of Coal</p>
+        <aside>
+            <div class="direitacoluna">
+                <div class="notice">
+                    <h3>Popular Post</h3>
+                    <img src="imagens/post2.jpg" alt="post1">
+                    <h3>Battle Lines Harden Over Big Oil’s Role at Climate Talks in Dubai</h3>
+                    <p>The hosts of the United Nations global climate summit later this year aim to give fossil fuel
+                        companies a bigger voice, despite loud objections.</p>
+                    <img src="imagens/post3.png" alt="psot3">
+                    <h3>Here’s How Much Hotter Than Normal This June Has Been</h3>
+                    <p>Record global warmth this month could portend a summer of extreme weather</p>
+                    <img src="imagens/psot4.jpg" alt="post4">
+                    <p> Why a Huge Coal Power Plant in Bangladesh Keeps Running Out of Coal</p>
+                </div>
             </div>
-        </div>
+        </aside>
     </div>
     <div id="imagens"></div>
     </div>
