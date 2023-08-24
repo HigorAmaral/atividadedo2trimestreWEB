@@ -10,24 +10,27 @@
     --cor6: black;
     --cor7: white;
     --font-family: 'Lora', serif;
-    --cor8 :rgba(255, 255, 255, 0.6);
+    --cor8: rgba(255, 255, 255, 0.6);
 }
-P{
+
+P {
     box-shadow: var(--cor6);
     text-shadow: var(--cor6);
 }
+
 header {
-	height: 100px;
-	flex: 1 1 100vw;
+    height: 100px;
+    flex: 1 1 100vw;
 }
 
 header #logo {
-	display: flex;
-	flex: 0 1 200px;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    flex: 0 1 200px;
+    justify-content: center;
+    align-items: center;
     grid-area: auto;
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -118,7 +121,11 @@ body {
     .notice,
     #col1,
     #col2,
-    #col3, .carrocel, .logo, #imagen, header{
+    #col3,
+    .carrocel,
+    .logo,
+    #imagen,
+    header {
         width: 100%;
         padding: 0;
     }
@@ -135,7 +142,7 @@ body {
 h2,
 h1 {
     font-family: var(--font-family);
-    text-shadow: black 1px 1px 3px;
+    text-shadow: var(--cor6) 1px 1px 3px;
 }
 
 .company-details {
@@ -205,7 +212,7 @@ ul.contact li a {
 }
 
 
-  #imagem{
+#imagem {
     height: 500px;
     width: 500px;
     border: 1px solid var(--cor6);
@@ -214,50 +221,57 @@ ul.contact li a {
     animation-name: muda_imagem;
     animation-duration: 8s;
     animation-iteration-count: infinite;
-  }
-  @keyframes muda_imagem {
-    0%{
-      background-image: url("imagens/news1.webp");
+}
+
+@keyframes muda_imagem {
+    0% {
+        background-image: url("imagens/news1.webp");
     }
-    33%{
-      background-image: url("imagens/sports1.jpg");
+
+    33% {
+        background-image: url("imagens/sports1.jpg");
     }
-    66%{
-      background-image: url("imagens/post1.jpg");
+
+    66% {
+        background-image: url("imagens/post1.jpg");
     }
-    100%{
-      background-image: url("imagens/news1.webp");
+
+    100% {
+        background-image: url("imagens/news1.webp");
     }
-  }
-  .container{
+}
+
+.container {
     display: grid;
     grid-template-rows: 150px;
     margin-top: 10px;
     margin-top: auto;
-  }
-  #quadrado{
+}
+
+#quadrado {
     height: 5px;
     width: 100px;
     position: absolute;
-    background-color:var(--cor7);
+    background-color: var(--cor7);
     animation-name: quadrinhos;
     top: 150px;
     animation-iteration-count: infinite;
     animation: rola_bola 5s infinite;
-  }
+}
 
-  @keyframes rola_bola {
-    0%{
-     
-      left: 0px;
+@keyframes rola_bola {
+    0% {
+
+        left: 0px;
     }
-    50%{
-     
-      left: 94%;
+
+    50% {
+
+        left: 94%;
     }
-    100%{
-    
-      left: 0px;
+
+    100% {
+
+        left: 0px;
     }
-  }
- 
+}
