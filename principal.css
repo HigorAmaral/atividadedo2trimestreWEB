@@ -12,6 +12,10 @@
     --font-family: 'Lora', serif;
     --cor8 :rgba(255, 255, 255, 0.6);
 }
+P{
+    box-shadow: var(--cor6);
+    text-shadow: var(--cor6);
+}
 header {
 	height: 100px;
 	flex: 1 1 100vw;
@@ -26,7 +30,6 @@ header #logo {
 }
 * {
     box-sizing: border-box;
-    margin: 1 auto;
     padding: 0;
 }
 
@@ -132,7 +135,7 @@ body {
 h2,
 h1 {
     font-family: var(--font-family);
-    text-shadow: var(--cor6);
+    text-shadow: black 1px 1px 3px;
 }
 
 .company-details {
@@ -236,7 +239,7 @@ ul.contact li a {
     height: 5px;
     width: 100px;
     position: absolute;
-    background-color:var(--cor1);
+    background-color:var(--cor7);
     animation-name: quadrinhos;
     top: 150px;
     animation-iteration-count: infinite;
