@@ -22,10 +22,12 @@ header #logo {
 	flex: 0 1 200px;
 	justify-content: center;
 	align-items: center;
+    grid-area: auto;
 }
-
 * {
     box-sizing: border-box;
+    margin: 1 auto;
+    padding: 0;
 }
 
 body {
@@ -48,6 +50,7 @@ body {
 }
 
 .topnav {
+    margin-bottom: auto;
     overflow: hidden;
     background-color: var(--cor6);
     grid-auto-columns: auto;
@@ -112,7 +115,7 @@ body {
     .notice,
     #col1,
     #col2,
-    #col3, .carrocel {
+    #col3, .carrocel, .logo, #imagen, header{
         width: 100%;
         padding: 0;
     }
@@ -221,6 +224,37 @@ ul.contact li a {
     }
     100%{
       background-image: url("imagens/news1.webp");
+    }
+  }
+  .container{
+    display: grid;
+    grid-template-rows: 150px;
+    margin-top: 10px;
+    margin-top: auto;
+  }
+  #quadrado{
+    height: 5px;
+    width: 100px;
+    position: absolute;
+    background-color:var(--cor1);
+    animation-name: quadrinhos;
+    top: 150px;
+    animation-iteration-count: infinite;
+    animation: rola_bola 5s infinite;
+  }
+
+  @keyframes rola_bola {
+    0%{
+     
+      left: 0px;
+    }
+    50%{
+     
+      left: 94%;
+    }
+    100%{
+    
+      left: 0px;
     }
   }
  
